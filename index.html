@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
-            line-height: 1.4;
+            line-height: 1.35;
             color: #000;
             background: #fff;
             max-width: 600px;
@@ -17,16 +17,15 @@
         }
         
         h1 {
-            font-size: 24px;
-            font-weight: normal;
-            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
             line-height: 1.3;
+            text-align: left;
         }
         
-        .subtitle {
-            font-size: 18px;
-            font-style: italic;
-            margin-bottom: 40px;
+        h1 span {
+            font-weight: bold;
         }
         
         p {
@@ -34,13 +33,17 @@
         }
         
         .signature {
-            margin-top: 60px;
+            margin-top: 32px;
+        }
+        
+        .first-paragraph {
+            margin-top: 16px;
         }
         
         hr {
             border: none;
             border-top: 0.25px solid #000;
-            margin: 40px 0;
+            margin: 32px 0;
         }
         
         blockquote {
@@ -48,12 +51,51 @@
             padding-left: 40px;
             font-style: italic;
         }
+        
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            body {
+                margin: 36px auto;
+                padding: 0 24px;
+                font-size: 16px;
+            }
+            
+
+            h1 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            
+            p {
+                margin-bottom: 14px;
+                font-size: 18px;
+
+            }
+            
+            .first-paragraph {
+                margin-top: 16px;
+            }
+            
+            .signature {
+                margin-top: 24px;
+            }
+            
+            hr {
+                margin: 24px 0;
+            }
+            
+            blockquote {
+                margin: 16px 0;
+                padding-left: 24px;
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Gossip is Good:<br>A Manifesto for Social Intelligence</h1>
+    <h1>Gossip is Good:<br><span>A Manifesto for Social Intelligence</span></h1>
 
-    <p>I’ve spent my career trying to figure out how computers could help humans become exponential—multiply our agency, creativity, and love—while respecting our vulnerabilities.</p>
+    <p class="first-paragraph">I've spent my career trying to figure out how computers could help humans become exponential—multiply our agency, creativity, and love—while respecting our vulnerabilities.</p>
 
     <p>In 2018, I believed the bottleneck was our tools: modern computing paradigms force us to fragment our thoughts into a staccato of taps and commands, to compress our intentions within inflexible walled gardens—to think like machines. So I designed a speculative operating system—<a href="http://mercuryos.com">Mercury OS</a>—around a generative interface that could fluidly adapt to the way we think.</p>
 
@@ -103,16 +145,15 @@
 
     <p>We’ve already seen this film before: Social media scaled our ability to broadcast ourselves and took away our ability to see each other clearly. Capitalism scaled our individual agency at the expense of our obligation to care. With personal intelligences powered by exponentially scaling model capabilities, what we gain in individual power we lose in shared reality and collective sense-making. The world we risk hurtling toward is a world suffocated by exponential loneliness, exponential interpersonal misalignment.</p>
 
-    <p>I believe in a different world, the world I saw a glimpse of with Dot. A world where teams could make sense of who-knows-what-where without being smothered under layers of political bureaucracy and inefficiency. Where the triangulation of truth between he-said-she-said could happen without being filtered through the agendas of legacy institutions. Where billions of people with seemingly incompatible contexts and needs could coordinate towards a shared, humane future.</p>
+    <p>I believe in a different world, the world I saw a glimpse of with Dot. A world where teams could make sense of who-knows-what-where without being smothered under layers of political bureaucracy and inefficiency. Where the triangulation of truth between he-said-she-said could happen without being filtered through the agendas of legacy institutions. Where communities big and small can navigate conflict together while preserving the dignity of each individual. Where billions of people with seemingly incompatible contexts and needs could coordinate towards a shared, humane future.</p>
 
-    <p>In pursuit of this vision, I’ve started a new company.</p>
+   <p>In pursuit of this vision, I’ve started a new company.</p>
     
-    <p>Our mandate: build the definitive Social Intelligence, the ultimate human facilitator and coordinator, distributed through a best-in-class consumer social experience that feels as intuitive and playful as gossiping with a friend.</p>
-
+    <p><strong>Our mandate: build the definitive Social Intelligence, the ultimate human facilitator and coordinator, distributed through a best-in-class consumer social experience that feels as intuitive and playful as gossiping with a friend.</strong></p>
+ 
     <p>For the first time in human history, we can build coordination technology that doesn’t force us to choose between caring deeply and coordinating widely. Technology that finally makes us exponential—not as individuals, but as the collective intelligence we’ve always been meant to be.</p>
 
-    <br>
 
-    <p>All my love,<br><a href="https://x.com/jasonyuandesign">Jason Yuan</a><br>Founder and CEO<br>Future Lovers, Inc</p>
+    <p class="signature">All my love,<br><a href="https://x.com/jasonyuandesign">Jason Yuan</a><br>Founder and CEO<br>Future Lovers, Inc</p>
 </body>
 </html>
